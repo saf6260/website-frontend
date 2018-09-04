@@ -1,0 +1,28 @@
+.general{
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.control{
+    margin-right: 0px;
+    background: transparent;
+}
+
+.background{
+    background: transparent;
+}
+
+@media screen and (min-width: 1800px) {
+    .control{margin-right: 10px;}
+}
+
+.skill{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

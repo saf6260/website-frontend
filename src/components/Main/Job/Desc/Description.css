@@ -1,0 +1,14 @@
+.main{
+    line-height: 30px;
+    background: #f3ecd8;
+}
+
+.short{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.large{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}

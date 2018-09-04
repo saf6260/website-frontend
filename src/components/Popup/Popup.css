@@ -1,0 +1,71 @@
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup_inner{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    margin: auto;
+    background: lightGrey;
+}
+
+.form{
+    width: 93%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header{
+    text-align: center;
+    font-size: 30px;
+    background-color: transparent;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.header2{
+    text-align: center;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+.mini_header{
+    font-size: 20px;
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.submit{
+    margin-top: 10px;
+    width: 30%;
+    position: relative;
+    left: 35%;
+}
+
+.link{
+    text-align: center;
+    text-size: 15px;
+}
+
+.switch{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.switch:Hover{
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
