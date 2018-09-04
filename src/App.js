@@ -43,13 +43,6 @@ const mapDispatchToProps = (dispatch) => {
 
 class App extends Component {
 
-    componentDidMount() {
-        fetch('http://localhost:3000/')
-            .then(res => res.json())
-            .then(console.log)
-            .catch(console.log)
-    }
-
     render() {
         const {onChangeEducation, onChangeWork, onChangeProjects, onChangeActivities, education, work, skills, projects, activities, route, onRouteChange, onLoginClick, onRegisterClick, registerPopup, loginPopup, onLoginClose, onRegisterClose, onLoginSwitch, onRegisterSwitch} = this.props
         const changeRoute = () => {
