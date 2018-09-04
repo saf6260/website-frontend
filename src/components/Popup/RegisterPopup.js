@@ -6,7 +6,7 @@ class RegisterPopup extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            email = '',
+            email: '',
             password: '',
             name: '',
             username: ''
@@ -31,7 +31,7 @@ class RegisterPopup extends React.Component{
 
     onButtonSubmit = () => {
         fetch('https://blooming-shelf-57010.herokuapp.com/register', {
-            method: 'post'
+            method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
                 email: this.state.email,
@@ -90,7 +90,7 @@ class RegisterPopup extends React.Component{
                 ></input>
                 <button 
                     className='submit'
-                    onClick={onButtonSubmit}
+                    onClick={this.onButtonSubmit}
                 >
                     Submit
                 </button>
