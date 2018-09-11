@@ -10,7 +10,7 @@ import {
     POPUP_LOGIN_CLOSE,
     POPUP_REGISTER_CLOSE,
     LOGIN_SWITCH,
-    REGISTER_SWITCH
+    REGISTER_SWITCH,
 } from './constants.js';
 
 export const changeEducation = (number) => ({

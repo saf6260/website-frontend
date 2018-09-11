@@ -10,7 +10,7 @@ import{
     POPUP_REGISTER,
     POPUP_REGISTER_CLOSE,
     LOGIN_SWITCH,
-    REGISTER_SWITCH
+    REGISTER_SWITCH,
 } from './constants.js'
 
 const initialUser = {

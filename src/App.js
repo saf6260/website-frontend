@@ -44,7 +44,7 @@ const mapDispatchToProps = (dispatch) => {
 class App extends Component {
 
     render() {
-        const {onChangeEducation, onChangeWork, onChangeProjects, onChangeActivities, education, work, skills, projects, activities, route, onRouteChange, onLoginClick, onRegisterClick, registerPopup, loginPopup, onLoginClose, onRegisterClose, onLoginSwitch, onRegisterSwitch} = this.props
+        const {onChangeEducation, onChangeWork, onChangeProjects, onChangeActivities, education, work, skills, projects, activities, route, onRouteChange, onLoginClick, onRegisterClick, registerPopup, loginPopup, onLoginClose, onRegisterClose, onLoginSwitch, onRegisterSwitch, isSignedIn} = this.props
         const changeRoute = () => {
             if(registerPopup){
                 onRegisterClose();
@@ -66,6 +66,7 @@ class App extends Component {
       return (
           <div>
               <TopBar 
+                  signedIn={isSignedIn}
                   changeRoute={changeRoute}
                   changeHome={changeHome}
                   loginClicked={onLoginClick}
@@ -99,6 +100,7 @@ class App extends Component {
                         <RegisterPopup 
                             registerClose={onRegisterClose}
                             registerSwitch={onRegisterSwitch}
+                            signIn={login}
                         />
                         : null
                 }
