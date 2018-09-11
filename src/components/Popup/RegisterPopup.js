@@ -29,7 +29,7 @@ class RegisterPopup extends React.Component{
         this.setState({password: event.target.value})
     }
 
-    onButtonSubmit = ({signIn}) => {
+    onButtonSubmit = ({signIn, registerClose}) => {
         fetch('https://blooming-shelf-57010.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
@@ -43,8 +43,7 @@ class RegisterPopup extends React.Component{
             .then(response => response.json())
             .then(resp => {
                 console.log('success');
-                signIn;
-
+                signIn();
             })
            .catch(err => { 
               alert("Error registering user. Please try again later.");
@@ -96,7 +95,7 @@ class RegisterPopup extends React.Component{
                 ></input>
                 <button 
                     className='submit'
-                    onClick={() => this.onButtonSubmit(signIn)}
+                    onClick={() => this.onButtonSubmit(signIn, registerClose)}
                 >
                     Submit
                 </button>

@@ -30,6 +30,7 @@ class LoginPopup extends React.Component {
       })
       .then(response => response.json())
       .then(user => {
+        console.log(user);
         console.log('user logged in');
       })
       .catch(err => console.log(err))
