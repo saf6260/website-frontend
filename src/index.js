@@ -12,6 +12,11 @@ const rootReducer = combineReducers({login, changeNumber, changeRoute, activateP
 
 const store = createStore(rootReducer); 
 
+var host = "www.scottalexf.com";
+if((host == window.location.host) && (window.location.protocol != "https:")){
+    window.location.protocol = "https";
+}
+
 ReactDOM.render(
   <Provider store={store}>
       <App />  
